@@ -1,22 +1,24 @@
 html,
 body {
-    background-color: #ced4da;
-    font-family: 'Montserrat', sans-serif;;
-    line-height: 1.5;
+  background-color: #ced4da;
+  font-family: 'Montserrat', sans-serif;;
+  line-height: 1.5;
 }
 
 #navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-color: #212529;
-}
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 250px;
+  max-width: 280px;
+  height: 100%;
+ 
+} 
 
 header {
   color: black;
-  margin: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 1.8em;
   font-weight: thin;
@@ -28,7 +30,7 @@ header {
 }
 
 #navbar ul {
-  height: 92%;
+  height: 85%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -45,7 +47,11 @@ header {
 #navbar a {
   display: block;
   padding: 15px 30px;
-  color: #343a40;
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 #main-doc {
@@ -81,26 +87,36 @@ code {
 }
 
 @media (max-width: 800px) {
-    #navbar ul {
-    border: solid;
-    height: 200px;
+  #navbar header {
+    margin-left: 30px;
+    width: max-content;
+  }
+
+  #navbar ul {
+  background-color: #ced4da;
+  border: solid;
+  height: 190px;
+  margin-left: 30px;
+  width: max-content;
+  
 }
 
   #navbar {
-    background-color: #f8f9fa;
+    background-color: #ced4da;
     position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 250px;
+    max-height: 280px;
     border: none;
-    border-bottom: 2px solid;
+    z-index: 1;
   }
 
   #main-doc {
     position: relative;
-    
+    margin-left: 0px;
+    margin-top: 270px;
   }
 }
 
